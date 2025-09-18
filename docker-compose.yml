@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: nicollyvermieiro/my-app:v1.0 
+    container_name: my-app-container 
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: nicolly
+      DB_NAME: prova
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: example
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db-data:
