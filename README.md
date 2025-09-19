@@ -54,8 +54,9 @@ A imagem da aplicação foi publicada no Docker Hub:
 
 Para baixar e executar a imagem diretamente:
 
-docker pull nicollyvermieiro/my-app
-docker run -p 3000:3000 nicollyvermieiro/my-app
+1. docker pull nicollyvermieiro/my-app:v1.0
+2. docker run -p 3000:3000 nicollyvermieiro/my-app:v1.0
 
 
-👩‍💻 Desenvolvido por Nicolly Vermieiro Ferreira
+
+## 👩‍💻 Desenvolvido por Nicolly Vermieiro Ferreira
