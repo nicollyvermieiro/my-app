@@ -50,12 +50,12 @@ Acesse o endpoint:
 
 A imagem da aplicação foi publicada no Docker Hub:
 
-🔗 Link da imagem: https://hub.docker.com/r/nicollyvermieiro/my-app:v1.0
+🔗 Link da imagem: https://hub.docker.com/layers/nicollyvermieiro/my-app/v1.0
 
 Para baixar e executar a imagem diretamente:
 
-1. docker pull nicollyvermieiro/my-app:v1.0
-2. docker run -p 3000:3000 nicollyvermieiro/my-app:v1.0
+1. docker pull nicollyvermieiro/my-app
+2. docker run -p 3000:3000 nicollyvermieiro/my-app
 
 
 
